@@ -1,38 +1,62 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pdf-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pdf-page .pager {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+.pdf-page .pager li {
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pdf-page .pager li button {
+  border: none;
+  border-radius: 51%;
+  padding: 1px 6px 4px 7px;
+  background: #333333ed;
+  font-size: 18px;
+}
+
+.pdf-page .pager li button:hover {
+  color: #0F52BA;
+}
+
+@media (max-width:1400px) {
+  .pdf-page canvas {
+    width: 1000px !important;
+    height: 1500px !important;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width:1250px) {
+  .pdf-page canvas {
+    width: 800px !important;
+    height: 1200px !important;
+  }
+}
+
+@media (max-width:1100px) {
+  .pdf-page canvas {
+    width: 600px !important;
+    height: 900px !important;
+  }
+}
+
+@media (max-width:950px) {
+  .pdf-page canvas {
+    width: 500px !important;
+    height: 800px !important;
   }
 }
