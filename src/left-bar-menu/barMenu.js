@@ -1,6 +1,7 @@
 import React from "react";
 import photo from "./../media/profilePhoto.png";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 function BarMenu(props) {
   return (
@@ -14,10 +15,18 @@ function BarMenu(props) {
         </div>
       </div>
       <ul className="nav-items">
-        <li>CV</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li>
+          <Link to="/cv"> CV </Link>
+        </li>
+        <li>
+          <Link to="/skills"> Skills </Link>{" "}
+        </li>
+        <li>
+          <Link to="/projects"> Projects </Link>
+        </li>
+        <li>
+          <Link to="/contact"> Contact </Link>
+        </li>
       </ul>
     </div>
   );
