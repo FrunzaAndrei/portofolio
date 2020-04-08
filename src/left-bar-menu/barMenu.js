@@ -1,10 +1,15 @@
 import React from "react";
 import photo from "./../media/profilePhoto.png";
 import "./style.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function BarMenu(props) {
   const age = new Date().getFullYear();
+  const selected = {
+    fontWeight: "bold",
+    color: "#0F52BA",
+    letterSpacing: "1px",
+  };
   return (
     <div className="main-barMenu">
       <div className="avatar-barMenu">
@@ -17,16 +22,24 @@ function BarMenu(props) {
       </div>
       <ul className="nav-items">
         <li>
-          <Link to="/cv"> CV </Link>
+          <NavLink to="/cv" activeStyle={selected}>
+            CV
+          </NavLink>
         </li>
         <li>
-          <Link to="/skills"> Skills </Link>{" "}
+          <NavLink to="/skills" activeStyle={selected}>
+            Skills
+          </NavLink>
         </li>
         <li>
-          <Link to="/projects"> Projects </Link>
+          <NavLink to="/projects" activeStyle={selected}>
+            Projects
+          </NavLink>
         </li>
         <li>
-          <Link to="/contact"> Contact </Link>
+          <NavLink to="/contact" activeStyle={selected}>
+            Contact
+          </NavLink>
         </li>
       </ul>
     </div>
