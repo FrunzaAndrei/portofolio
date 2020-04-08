@@ -4,13 +4,14 @@ import "./style.css";
 import { Link } from "react-router-dom";
 
 function BarMenu(props) {
+  const age = new Date().getFullYear();
   return (
     <div className="main-barMenu">
       <div className="avatar-barMenu">
         <img src={photo} className="image-profile" />
         <div>
           <p className="name-profile">Frunza Andrei-Daniel</p>
-          <p className="age-profile">Age : 23</p>
+          <p className="age-profile">Age : {age - 1996}</p>
           <p className="ocupation-profile">Front-End Developer</p>
         </div>
       </div>
