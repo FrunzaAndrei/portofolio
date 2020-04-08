@@ -2,6 +2,10 @@ import React from "react";
 import photo from "./../media/profilePhoto.png";
 import "./style.css";
 import { NavLink } from "react-router-dom";
+import { FaRegIdBadge } from "react-icons/fa";
+import { FiUserCheck } from "react-icons/fi";
+import { FaBriefcase } from "react-icons/fa";
+import { MdPhone } from "react-icons/md";
 
 function BarMenu(props) {
   const age = new Date().getFullYear();
@@ -23,22 +27,26 @@ function BarMenu(props) {
       <ul className="nav-items">
         <li>
           <NavLink to="/cv" activeStyle={selected}>
-            CV
+            <FaRegIdBadge size="1.2em" />
+            &nbsp; CV
           </NavLink>
         </li>
         <li>
           <NavLink to="/skills" activeStyle={selected}>
-            Skills
+            <FiUserCheck size="1.2em" />
+            &nbsp; Skills
           </NavLink>
         </li>
         <li>
           <NavLink to="/projects" activeStyle={selected}>
-            Projects
+            <FaBriefcase size="1.2em" />
+            &nbsp; Projects
           </NavLink>
         </li>
         <li>
           <NavLink to="/contact" activeStyle={selected}>
-            Contact
+            <MdPhone size="1.2em" />
+            &nbsp; Contact
           </NavLink>
         </li>
       </ul>
