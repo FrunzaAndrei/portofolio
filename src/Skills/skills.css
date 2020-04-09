@@ -18,13 +18,16 @@
     flex-grow: 1;
     margin: auto;
     max-width: 1200px;
-    max-height: 1200px;
+    height: max-content;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 2vmin;
     justify-items: center;
     align-items: center;
+    margin-bottom: 7em;
+    margin-left: 6em;
+    margin-right: 6em;
 }
 
 .imageIMG {
