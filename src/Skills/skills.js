@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+import "./skills.css";
+import tileData from "../store/titleData";
 
 function Skills() {
-    return (
-        <div>
-            <h1>Skills page</h1>
-        </div>
-    )
+  return (
+    <div className="bodySkills">
+      <div className="wrapper">
+        {tileData.map((tile) => (
+          <img src={tile.img} alt={tile.title} className="imageIMG"/>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default Skills;
