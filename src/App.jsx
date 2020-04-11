@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
-import BarMenu from "./left-bar-menu/barMenu";
-import PdfFile from "./CV/pdfViewer";
+import BarMenu from "./left-bar-menu/BarMenu";
+import PdfFile from "./CV/PdfViewer";
 import { Route } from "react-router-dom";
-import Skills from "./Skills/skills";
-import Projects from "./Projects/projects";
-import Contacts from "./Contact/contacts";
+import Skills from "./Skills/Skills";
+import Projects from "./Projects/Projects";
+import Contacts from "./Contact/Contacts";
 
 export default class App extends Component {
   constructor(props) {
