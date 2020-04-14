@@ -1,0 +1,28 @@
+.project-page {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #333333ad;
+    width: inherit;
+}
+
+.project-page h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.project-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+}
+
+.project-area:nth-child(2n+1) {
+    flex-direction: row-reverse;
+}
+
+.projectDescription {
+    padding: 10px;
+    width: 50%;
+    height: auto;
+}

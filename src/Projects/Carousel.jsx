@@ -10,7 +10,7 @@ const Slider = () => {
   };
   return (
     <div class="carousel-wrapper">
-      <Carousel infiniteLoop useKeyboardArrows autoPlay showThumbs={false}>
+      <Carousel infiniteLoop useKeyboardArrows autoPlay showThumbs={false} showStatus={false}>
         {titleData.map((item) => (
           <div>
             <img src={item.img} style={styleCarousel} />

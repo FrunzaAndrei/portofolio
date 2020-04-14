@@ -4,8 +4,8 @@ import BarMenu from "./left-bar-menu/BarMenu";
 import PdfFile from "./CV/PdfViewer";
 import { Route } from "react-router-dom";
 import Skills from "./Skills/Skills";
-import Projects from "./Projects/Projects";
 import Contacts from "./Contact/Contacts";
+import ProjectsPage from "./Projects/Projects";
 
 export default class App extends Component {
   constructor(props) {
@@ -30,7 +30,7 @@ export default class App extends Component {
           )}
         />
         <Route path="/skills" render={() => <Skills />} />
-        <Route path="/projects" render={() => <Projects />} />
+        <Route path="/projects" render={() => <ProjectsPage />} />
         <Route path="/contact" render={() => <Contacts />} />
       </div>
     );

@@ -1,15 +1,17 @@
 import React from "react";
-import Slider from "./Carousel";
+import "./style.css";
+import Project from "./Project";
+import projects from "../store/myProjects";
 
-function Projects() {
+function ProjectsPage() {
   return (
-    <div>
-      <h1>Projects page</h1>
-      <div style={{ width: "600px", height: "300px" }}>
-        <Slider />
-      </div>
+    <div className="project-page">
+      <h1>My Projects</h1>
+      {projects.map((item, index) => (
+        <Project project={item} key={index} />
+      ))}
     </div>
   );
 }
 
-export default Projects;
+export default ProjectsPage;
