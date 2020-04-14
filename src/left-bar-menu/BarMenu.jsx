@@ -1,5 +1,5 @@
 import React from "react";
-import photo from "./../media/profilePhoto.png";
+import photo from "./../store/profilePhoto.png";
 import "./style.css";
 import { NavLink } from "react-router-dom";
 import { FaRegIdBadge } from "react-icons/fa";

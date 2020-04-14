@@ -1,19 +1,24 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import titleData from "../store/titleData";
 
-const Slider = () => {
+const Slider = (props) => {
   const styleCarousel = {
     width: "auto",
-    height: "300px",
+    height: 260,
   };
   return (
-    <div class="carousel-wrapper">
-      <Carousel infiniteLoop useKeyboardArrows autoPlay showThumbs={false} showStatus={false}>
-        {titleData.map((item) => (
-          <div>
-            <img src={item.img} style={styleCarousel} />
+    <div className="carousel-wrapper">
+      <Carousel
+        infiniteLoop
+        useKeyboardArrows
+        autoPlay
+        showThumbs={false}
+        showStatus={false}
+      >
+        {props.image.map((item, id) => (
+          <div key={id}>
+            <img src={item} style={styleCarousel} />
           </div>
         ))}
       </Carousel>

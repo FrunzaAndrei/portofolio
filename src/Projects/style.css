@@ -1,24 +1,28 @@
 .project-page {
     box-sizing: border-box;
-    padding: 20px;
     background-color: #333333ad;
-    width: inherit;
-}
-
-.project-page h1 {
-    text-align: center;
-    margin-bottom: 10px;
+    width: 87%;
 }
 
 .project-area {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    padding: 5px;
+    align-items: center;
+}
+
+.project-area .project-page h1 {
+    text-align: left;
+    margin-bottom: 15px;
 }
 
 .project-area:nth-child(2n+1) {
     flex-direction: row-reverse;
+}
+
+.project-area:nth-child(2n+1) .project-page h1 {
+    text-align: right !important;
 }
 
 .projectDescription {
