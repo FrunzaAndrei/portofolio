@@ -16,22 +16,31 @@ const useStyles = makeStyles({
     minWidth: 300,
     background: "#333",
     color: "white",
-    margin:  25,
-    flexBasis: 500
+    margin: 25,
+    flexBasis: 500,
   },
   media: {
     height: 270,
     color: "white",
   },
-  content:{
-      color: "white",
-      textAlign: "justify",
-      height:200
-  }
+  content: {
+    color: "white",
+    textAlign: "justify",
+    height: 200,
+  },
 });
 
 function ProjectMD(props) {
   const classes = useStyles();
+
+  const showCode = () => {
+    let win = window.open(props.props.project.github, "_blank");
+    win.focus();
+  };
+  const playIt = () => {
+    let win = window.open(props.project.tryIt, "_blank");
+    win.focus();
+  };
 
   return (
     <Card className={classes.root}>
@@ -44,27 +53,19 @@ function ProjectMD(props) {
             {props.project.title}
           </Typography>
           {props.project.description.map((item, id) => (
-            <Typography
-              key={id}
-              variant="body2"
-              component="p"
-            >
+            <Typography key={id} variant="body2" component="p">
               - {item}
             </Typography>
           ))}
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <a href={props.project.github} target="_blank">
-          <Button size="small" color="primary">
-            Code
-          </Button>
-        </a>
-        <a href={props.project.tryIt} target="_blank">
-          <Button size="small" color="primary">
-            Try It
-          </Button>
-        </a>
+        <Button size="small" color="primary" onClick={showCode}>
+          Code
+        </Button>
+        <Button size="small" color="primary" onClick={playIt}>
+          Try It
+        </Button>
       </CardActions>
     </Card>
   );
