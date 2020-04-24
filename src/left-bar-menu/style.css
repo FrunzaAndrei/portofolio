@@ -32,6 +32,7 @@
     box-shadow: 0px 0px 12px -7px rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: content-box;
+    transition: width .5s, border-radius .5s .5s;
 }
 
 .name-profile {
@@ -93,4 +94,30 @@
 .nav-items li a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
+    font-size: inherit;
+    transition: font-size .5s;
+}
+
+@media ( max-width: 500px) {
+    .main-barMenu {
+        min-width: 60px;
+        width: 60px;
+    }
+    .image-profile {
+        margin-top: 50px;
+        width: 80%;
+        border-radius: 10%;
+    }
+    .name-profile, .age-profile, .ocupation-profile, .nav-items li span {
+        display: none;
+    }
+    .nav-items {
+        text-align: center;
+    }
+    .nav-items li {
+        padding: 19px 10px 12px 8px;
+    }
+    .nav-items li a{
+        font-size: larger;
+    }
 }

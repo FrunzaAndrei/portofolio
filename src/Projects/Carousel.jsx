@@ -3,10 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 const Slider = (props) => {
-  const styleCarousel = {
-    width: "auto",
-    height: 260,
-  };
+
   return (
     <div className="carousel-wrapper">
       <Carousel
@@ -18,7 +15,7 @@ const Slider = (props) => {
       >
         {props.image.map((item, id) => (
           <div key={id}>
-            <img src={item} style={styleCarousel} />
+            <img src={item} className="imgCarousel"/>
           </div>
         ))}
       </Carousel>

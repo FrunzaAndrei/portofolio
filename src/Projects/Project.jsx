@@ -1,5 +1,4 @@
 import React from "react";
-import "./styleProject.css";
 import Slider from "./Carousel";
 
 function Project(props) {

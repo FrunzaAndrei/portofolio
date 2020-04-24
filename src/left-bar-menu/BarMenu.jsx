@@ -28,25 +28,25 @@ function BarMenu(props) {
         <li>
           <NavLink to="/cv" activeStyle={selected}>
             <FaRegIdBadge size="1.2em" />
-            &nbsp; CV
+           <span> &nbsp; CV </span>
           </NavLink>
         </li>
         <li>
           <NavLink to="/skills" activeStyle={selected}>
             <FiUserCheck size="1.2em" />
-            &nbsp; Skills
+            <span>&nbsp; Skills</span>
           </NavLink>
         </li>
         <li>
           <NavLink to="/projects" activeStyle={selected}>
             <FaBriefcase size="1.2em" />
-            &nbsp; Projects
+            <span> &nbsp; Projects </span>
           </NavLink>
         </li>
         <li>
           <NavLink to="/contact" activeStyle={selected}>
             <MdPhone size="1.2em" />
-            &nbsp; Contact
+            <span> &nbsp; Contact </span>
           </NavLink>
         </li>
       </ul>

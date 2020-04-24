@@ -12,21 +12,73 @@
     align-items: center;
 }
 
-.project-area .project-page h1 {
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.project-area:nth-child(2n+1) {
-    flex-direction: row-reverse;
-}
-
-.project-area:nth-child(2n+1) .project-page h1 {
-    text-align: right !important;
-}
-
 .projectDescription {
     padding: 10px;
     width: 50%;
     height: auto;
+}
+.projectArea {
+    box-sizing: border-box;
+    max-width: 500px;
+    min-width: 300px;
+    background-color: #333;
+    color: white;
+    margin: 2%;
+    min-height: 500px;
+    box-shadow: 0px 0px 43px -14px #000;
+    border-radius: 3px;
+}
+
+.titleProject {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: monospace;
+    padding: 20px;
+    letter-spacing: 0.2px;
+}
+
+.descriptionProject {
+    height: 150px;
+}
+
+.descriptionProject, .actionProject {
+    padding: 0px 20px 20px 20px;
+}
+
+.descriptionProject li {
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.actionProject button {
+    margin: 0px 20px 0px 5px;
+    background: unset;
+    border: unset;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #214fc6;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.actionProject button:hover {
+    color: #333;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width:680px) {
+    .projectArea{
+        max-width:400px;
+    }
+  }
+
+@media (max-width:400px) {
+    .projectArea{
+        max-width:300px;
+    }
 }
