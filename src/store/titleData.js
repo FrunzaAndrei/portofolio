@@ -17,63 +17,63 @@ import csCart from "./logo-uri/cs-cart.png";
 const titleData = [
   {
     img: HTML,
-    title: "HTML"
+    title: "HTML",
   },
   {
     img: CSS,
-    title: "CSS"
+    title: "CSS",
   },
   {
     img: less,
-    title: "less"
+    title: "less",
   },
   {
     img: javascript,
-    title: "javascript"
+    title: "javascript",
   },
   {
     img: react,
-    title: "react"
+    title: "react",
   },
   {
     img: Firebase,
-    title: "Firebase"
+    title: "Firebase",
   },
   {
     img: csCart,
-    title: "csCart"
+    title: "csCart",
   },
   {
     img: GitHub,
-    title: "GitHub"
+    title: "GitHub",
   },
   {
     img: git,
-    title: "Git"
+    title: "Git",
   },
   {
     img: Ilustrator,
-    title: "Adobe Ilustrator"
+    title: "Adobe Ilustrator",
   },
   {
     img: photoshop,
-    title: "PhotoShop"
+    title: "PhotoShop",
   },
   {
     img: threeJS,
-    title: "Three JS"
+    title: "Three JS",
   },
   {
     img: DSMax,
-    title: "3DSMax"
+    title: "3DSMax",
   },
   {
     img: vue,
-    title: "Vue"
+    title: "Vue",
   },
   {
     img: visualStudio,
-    title: "Visual Studio Code"
+    title: "Visual Studio Code",
   },
 ];
 

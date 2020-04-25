@@ -40,13 +40,8 @@
     margin-bottom: 5px;
 }
 
-.age-profile {
-    font-size: 12px;
-    margin-bottom: 5px;
-}
-
 .ocupation-profile {
-    font-size: 13px
+    font-size: 10px
 }
 
 .nav-items {
@@ -78,17 +73,17 @@
 }
 
 .nav-items li:hover {
-    border-right: 5px solid #0F52BA;
+    border-right: 5px solid #309eb7;
 }
 
 .nav-items li:hover a {
     font-weight: bold;
-    color: #0F52BA;
+    color: #309eb7;
     letter-spacing: 1px;
 }
 
 .nav-items li:hover::after {
-    border-color: transparent transparent transparent #0F52BA;
+    border-color: transparent transparent transparent #309eb7;
 }
 
 .nav-items li a {

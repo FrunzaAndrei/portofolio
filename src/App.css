@@ -2,7 +2,99 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  display: rgba(51, 51, 51, 0.87);
+  background-color: rgba(51, 51, 51, 0.87);
+  height: 100vh;
+  height: fit-content;
+}
+
+.startBackground {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./store/background.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.startScreen {
+  max-width: 550px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.startScreen img {
+  width: auto;
+  height: 200px;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 0px 0px 25px -11px white;
+}
+
+.startScreen ul {
+  margin: auto;
+  list-style: none;
+}
+
+.startScreen ul li {
+  padding: 8px;
+  margin: 1px;
+  margin-bottom: 14px;
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: white;
+  line-height: 28px;
+  text-align: center;
+}
+
+.startScreen ul li p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.startScreen ul li span {
+  position: relative;
+  bottom: 4px;
+}
+
+.startScreen ul li button {
+  background: unset;
+  border: unset;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: 600;
+  color: #309eb7;
+  cursor: pointer;
+  position: relative;
+  bottom: 4px;
+  padding: 5px 17px 5px 17px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-radius: 0;
+  transition-delay: border-radius 0.2s;
+  transition: border-radius 0.5s, margin-left 0.8s, margin-right 0.8s;
+}
+
+.startScreen ul li button span {
+  position: relative;
+  top: 4px;
+  margin-left: 5px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.startScreen ul li button:hover {
+  margin-left: 5px;
+  margin-right: 5px;
+  background: #ffffff2a;
+  border-radius: 15px;
 }
 
 .pdf-page {
@@ -31,7 +123,7 @@
 }
 
 .pdf-page .pager li button:hover {
-  color: #0F52BA;
+  color: #309eb7;
 }
 
 @media (max-width:1400px) {
@@ -59,6 +151,21 @@
   .pdf-page canvas {
     width: 500px !important;
     height: 800px !important;
+  }
+}
+
+@media (max-width:520px) {
+  .startScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .startScreen img {
+    margin: unset;
+  }
+  .startScreen ul {
+    margin: auto;
   }
 }
 
