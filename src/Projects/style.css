@@ -17,6 +17,7 @@
     width: 50%;
     height: auto;
 }
+
 .projectArea {
     box-sizing: border-box;
     max-width: 500px;
@@ -72,13 +73,16 @@
 }
 
 @media (max-width:680px) {
-    .projectArea{
-        max-width:400px;
+    .projectArea {
+        max-width: 400px;
+        min-height: fit-content;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
-  }
+}
 
 @media (max-width:400px) {
-    .projectArea{
-        max-width:300px;
+    .projectArea {
+        max-width: 300px;
     }
 }
