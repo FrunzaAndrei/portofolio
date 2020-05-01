@@ -2,7 +2,6 @@ import React from "react";
 import avatarImg from "../store/profilePhoto.png";
 import { TiMediaPlay } from "react-icons/ti";
 import { TiMediaPlayReverse } from "react-icons/ti";
-import { TiMediaFastForward } from "react-icons/ti";
 
 export default function FirstScren(props) {
   const handleDisplayContent = () => {
@@ -16,17 +15,21 @@ export default function FirstScren(props) {
         <img src={avatarImg} alt="img" />
         <ul>
           <li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quibusdam esse molestiae quos doloremque iure quia porro facilis hic corporis, voluptate in adipisci assumenda iusto minima consectetur maiores iste amet.</p>
-            {/* <TiMediaPlay /> <span> My Protofolio </span> <TiMediaPlayReverse /> */}
+            <p>
+              Hi, my name is Andrei Frunză and at the moment I am a web
+              developer in a small company in Timișoara. Briefly, I started
+              learning code a year and a half ago and since then I improved
+              myself a lot, but of course there's always room for more. I enjoy
+              driving, which goes hand in hand with travelling, and also I'm
+              keen on experiencing new things and discovering the world. The
+              purpose of this portfolio is to practice both coding and English
+              skills, and to display what experience and knowledge I've gained
+              so far. Enjoy!
+            </p>
           </li>
           <li>
             <TiMediaPlay />
-            <button onClick={handleDisplayContent}>
-              Continue
-              {/* <span>
-                <TiMediaFastForward />
-              </span> */}
-            </button>
+            <button onClick={handleDisplayContent}>Continue</button>
             <TiMediaPlayReverse />
           </li>
         </ul>

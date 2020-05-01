@@ -10,14 +10,16 @@
 .startBackground {
   width: 100%;
   height: 100vh;
-  background-image: url("./store/background.jpg");
+  background-image: url("./store/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .startScreen {
-  max-width: 550px;
+  max-width: 60%;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -30,10 +32,12 @@
 
 .startScreen img {
   width: auto;
-  height: 200px;
+  height: 160px;
   margin: auto;
   border-radius: 50%;
-  box-shadow: 0px 0px 25px -11px white;
+  box-shadow: 0px 0px 22px -11px white;
+  -moz-box-shadow: 0px 0px 22px -11px white;
+  -webkit-box-shadow: 0px 0px 22px -11px white;
 }
 
 .startScreen ul {
@@ -45,7 +49,7 @@
   padding: 8px;
   margin: 1px;
   margin-bottom: 14px;
-  font-size: 17px;
+  font-size: 15px;
   font-family: sans-serif;
   font-weight: lighter;
   letter-spacing: 1px;
@@ -95,6 +99,10 @@
   margin-right: 5px;
   background: #ffffff2a;
   border-radius: 15px;
+}
+
+.startScreen ul li button:focus {
+  outline: none;
 }
 
 .pdf-page {

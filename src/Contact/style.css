@@ -14,9 +14,11 @@
     padding: 25px 20px;
     background-color: #333;
     border-radius: 5px;
-    box-shadow: 0px 0px 30px -15px grey;
     font-family: sans-serif;
     letter-spacing: 1px;
+    box-shadow: 0px 0px 30px -15px grey;
+    -moz-box-shadow: 0px 0px 30px -15px grey;
+    -webkit-box-shadow: 0px 0px 30px -15px grey;
 }
 
 .contact-content h3 {
@@ -31,16 +33,20 @@
     padding: 15px 10px;
     color: #309eb7;
     font-size: 22px;
-    box-shadow: 0px 5px 8px -6px rgb(36, 36, 36);
     border-radius: 5px;
-    transition: box-shadow 1s;
     box-sizing: border-box;
+    transition: box-shadow 1s;
+    box-shadow: 0px 5px 8px -6px rgb(36, 36, 36);
+    -moz-box-shadow: 0px 5px 8px -6px rgb(36, 36, 36);
+    -webkit-box-shadow: 0px 5px 8px -6px rgb(36, 36, 36);
 }
 
 .contact-content li:hover {
-    box-shadow: 0px 0px 5px 1px rgb(36, 36, 36);
-    border: 1px solid rgb(36, 36, 36);
     z-index: 10;
+    border: 1px solid rgb(36, 36, 36);
+    box-shadow: 0px 0px 5px 1px rgb(36, 36, 36);
+    -moz-box-shadow: 0px 0px 5px 1px rgb(36, 36, 36);
+    -webkit-box-shadow: 0px 0px 5px 1px rgb(36, 36, 36);
 }
 
 .contact-content li a {

@@ -2,7 +2,7 @@
 import React from "react";
 import { FaPhoneSquareAlt, FaLinkedin, FaGithub } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
-import background from "../store/background.jpg";
+import background from "../store/images/background.jpg";
 import "./style.css";
 
 function Contacts() {
