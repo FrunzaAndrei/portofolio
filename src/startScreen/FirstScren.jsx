@@ -5,8 +5,7 @@ import { TiMediaPlayReverse } from "react-icons/ti";
 
 export default function FirstScren(props) {
   const handleDisplayContent = () => {
-    console.log(props);
-    props.history.push("/cv");
+    props.history.push("/projects");
   };
 
   return (

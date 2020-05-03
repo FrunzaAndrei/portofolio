@@ -13,9 +13,9 @@ const App = (props) => {
     <div className="App">
       <BarMenu className="barMenu" />
       <Switch>
+        <Route path="/projects" component={ProjectsPage} />
         <Route path="/cv" component={PDF_CV} />
         <Route path="/skills" component={Skills} />
-        <Route path="/projects" component={ProjectsPage} />
         <Route path="/contact" component={Contacts} />
         <Route path="/" exact component={FirstScren} />
       </Switch>
