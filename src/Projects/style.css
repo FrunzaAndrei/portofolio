@@ -44,6 +44,27 @@
     height: 150px;
 }
 
+.descriptionProject .technologies {
+    margin-bottom: 10px;
+}
+
+.descriptionProject .technologies a {
+    color: #309eb7;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 3px 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: monospace;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 4px;
+}
+
+.descriptionProject .technologies a:hover {
+    color: #309eb7be;
+    background: rgba(255, 255, 255, 0.2);
+}
+
 .descriptionProject, .actionProject {
     padding: 0px 20px 20px 20px;
 }
@@ -85,10 +106,30 @@
         margin-top: 20px;
         margin-bottom: 10px;
     }
+    .titleProject {
+        font-size: 17px;
+    }
+    .actionProject {
+        padding: 0px 20px 9px 20px;
+    }
+    .descriptionProject li {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .descriptionProject .technologies a {
+        padding: 2px 10px;
+        margin-left: 6px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width:400px) {
     .projectArea {
         max-width: 300px;
+    }
+    .descriptionProject .technologies a {
+        padding: 2px 9px;
+        margin-left: 6px;
+        font-size: 13px;
     }
 }

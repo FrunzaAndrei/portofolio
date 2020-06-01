@@ -23,6 +23,13 @@ function Project(props) {
 
       <div className="descriptionProject">
         <ol>
+          <li className="technologies">
+            {props.project.technologies.map((item, id) => (
+              <a key={id} href={item.href} target="_blank">
+                {item.name}
+              </a>
+            ))}
+          </li>
           {props.project.description.map((item, id) => (
             <li key={id} variant="body2" component="p">
               - {item}

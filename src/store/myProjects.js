@@ -39,17 +39,42 @@ import firstReact6 from "./images/firstReactProject/img-6.jpg";
 const projects = [
   {
     title: "My First React Project",
-    description: [
-      "this application is sort of online shop (more like a simple template)",
-      'I make this to enter in "react world"',
-      "you can buy and if you are the mananger of the site you have a password and account and you can add some data in it",
+    technologies: [
+      { name: "react", href: "https://reactjs.org/" },
+      {
+        name: "react-router-dom",
+        href: "https://reacttraining.com/react-router/",
+      },
+      {
+        name: "react-icons",
+        href: "https://react-icons.github.io/react-icons/",
+      },
     ],
-    image: [firstReact1, firstReact2, firstReact3, firstReact4, firstReact5,firstReact6],
+    description: [
+      "This application is sort of online shop (more like a simple template)",
+      'I make this to enter in "react world"',
+      "You can buy and if you are the mananger of the site you have a password and account and you can add some data in it",
+    ],
+    image: [
+      firstReact1,
+      firstReact2,
+      firstReact3,
+      firstReact4,
+      firstReact5,
+      firstReact6,
+    ],
     github: "https://github.com/FrunzaAndrei/myFirstProject-in-React",
     tryIt: "https://myfirst-react-project.herokuapp.com",
   },
   {
     title: "ThreeJS Game",
+    technologies: [
+      { name: "ThreeJS", href: "https://threejs.org/" },
+      {
+        name: "Firebase",
+        href: "https://firebase.google.com/",
+      },
+    ],
     description: [
       "the game will start immediately after pressing the start button, so be ready!",
       "use the arrow-keys (left-right) or a-key and s-key to avoid the obstacles",
@@ -62,17 +87,32 @@ const projects = [
   },
   {
     title: "Wallet vue project",
+    technologies: [
+      { name: "Vue", href: "https://vuejs.org/" },
+      {
+        name: "Firebase",
+        href: "https://firebase.google.com/",
+      },
+    ],
     description: [
       "this application mananges your expenses",
       "you can to add some expense by completing all the fields and then click-ing on add button",
       "you can select the type of expense and see what is your total amount spent",
     ],
     image: [walletVue1, walletVue2, walletVue3],
-    github: "https://github.com/FrunzaAndrei/vue--expense-management-application",
+    github:
+      "https://github.com/FrunzaAndrei/vue--expense-management-application",
     tryIt: "https://expenses-management-app.herokuapp.com",
   },
   {
     title: "Vue Chat",
+    technologies: [
+      { name: "Vue", href: "https://vuejs.org/" },
+      {
+        name: "Firebase",
+        href: "https://firebase.google.com/",
+      },
+    ],
     description: [
       "this is my chat app",
       "I used vue-vuex and firebase to make the app",
@@ -84,6 +124,10 @@ const projects = [
   },
   {
     title: "My second vue project",
+    technologies: [
+      { name: "Vue", href: "https://vuejs.org/" },
+      { name: "ThreeJS", href: "https://threejs.org/" },
+    ],
     description: [
       "this is a basic example of an app made with vue , vuex and three.js",
       "after you've set the parameters you will need to click on 'Scene' to see what you just did",
@@ -94,6 +138,10 @@ const projects = [
   },
   {
     title: "My first vue project",
+    technologies: [
+      { name: "Vue", href: "https://vuejs.org/" },
+      { name: "ThreeJS", href: "https://threejs.org/" },
+    ],
     description: [
       "this is a very basic example of an app made with vue and three.js",
     ],
@@ -103,6 +151,13 @@ const projects = [
   },
   {
     title: "Angular Chat",
+    technologies: [
+      { name: "Angular", href: "https://angular.io/" },
+      {
+        name: "Firebase",
+        href: "https://firebase.google.com/",
+      },
+    ],
     description: [
       "this is my chat app",
       "I used angular and firebase to make the app",
@@ -114,6 +169,14 @@ const projects = [
   },
   {
     title: "Configurator Shape",
+    technologies: [
+      { name: "Angular", href: "https://angular.io/" },
+      {
+        name: "Firebase",
+        href: "https://firebase.google.com/",
+      },
+      { name: "ThreeJS", href: "https://threejs.org/" },
+    ],
     description: [
       "this is my small and basic app configurator",
       "I used angular and three.js library for this app",
@@ -133,6 +196,7 @@ const projects = [
   },
   {
     title: "TicTacToe Game",
+    technologies: [{ name: "ThreeJS", href: "https://threejs.org/" }],
     description: [
       "this games is only for computer/laptop",
       "this is my tictactoe game",
