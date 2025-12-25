@@ -15,7 +15,7 @@
     "react-loader-spinner": "^3.1.14",
     "react-responsive-carousel": "^3.1.57",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "node server.js",
